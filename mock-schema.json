@@ -1,0 +1,125 @@
+{
+    "templateName": {
+      "key": "templateName",
+      "type": "heading",
+      "configure": false,
+      "xs": 12
+    },
+    "appCode": {
+      "label": "App Code",
+      "key": "appCode",
+      "type": "label",
+      "configure": false,
+      "xs": 3
+    },
+    "environment": {
+      "label": "Environment",
+      "key": "environment",
+      "type": "label",
+      "configure": false,
+      "xs": 3
+    },
+    "appOwner": {
+      "label": "App Owner",
+      "key": "appOwner",
+      "type": "label",
+      "configure": false,
+      "xs": 3
+    },
+    "costCenter": {
+      "label": "Cost Center",
+      "key": "costCenter",
+      "type": "label",
+      "configure": false,
+      "xs": 3
+    },
+    "dividerA": {
+      "type": "divider"
+    },
+    "subnets": {
+      "label": "Network/Subnet",
+      "key": "subnets",
+      "type": "label",
+      "allowCopy": false,
+      "configure": false,
+      "xs": 3
+    },
+    "aksNamespace": {
+      "label": "DR Category",
+      "key": "drTier",
+      "type": "label",
+      "allowCopy": false,
+      "configure": false,
+      "xs": 9
+    },
+    "dividerB": {
+      "type": "divider",
+      "xs": 12
+    },
+    "subscription": {
+      "label": "Subscription Name",
+      "key": "subscriptionName",
+      "type": "copy",
+      "allowCopy": true,
+      "configure": false,
+      "xs": 6
+    },
+    "keyvault": {
+      "label": "Keyvault",
+      "key": "keyvault",
+      "configure": true,
+      "type": "radio",
+      "default": "true",
+      "xs": 6,
+      "options": [
+        {
+          "label": "Yes",
+          "value": "true"
+        },
+        {
+          "label": "No",
+          "value": "false"
+        }
+      ]
+    },
+    "dividerC": {
+      "type": "divider"
+    },
+    "sectionC": {
+      "title": "Select Database Size",
+      "type": "section",
+      "xs": 9
+    },
+    "database": {
+      "label": "Select Database size",
+      "key": "Select database Size",
+      "configure": true,
+      "type": "radioCard",
+      "source": "select database size",
+      "default": "small",
+      "condition": "true",
+      "xs": 9,
+      "options": [
+        {
+          "label": "Small",
+          "cost": "$306.99/mo",
+          "value": "small"
+        },
+        {
+          "label": "Medium",
+          "cost": "$410.00/mo",
+          "value": "medium"
+        },
+        {
+          "label": "Large",
+          "cost": "$520.99/mo",
+          "value": "large"
+        },
+        {
+          "label": "None",
+          "cost": "$0.00/mo",
+          "value": "none"
+        }
+      ] 
+    }
+  }
